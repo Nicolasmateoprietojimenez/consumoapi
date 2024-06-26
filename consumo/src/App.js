@@ -1,24 +1,18 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Listar from './componentes/listar';
-import './App.css';
-
+import EmpleadoForm from './componentes/actualizar';
+import Registrar from './componentes/registrar';
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <nav>
-          <ul>
-            <li>
-              <Link to="/listar">Listar Empleados</Link>
-            </li>
-          </ul>
-        </nav>
+    <div>
+      <Router>
         <Routes>
-          <Route path="/listar" element={<Listar />} />
+          <Route path="/" element={<Listar/>} />
+          <Route path="/actualizar/:documento" element={<EmpleadoForm/>} />
+          <Route path="/registrar" element={<Registrar/>} />
         </Routes>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

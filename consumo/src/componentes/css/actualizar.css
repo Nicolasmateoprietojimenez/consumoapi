@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #6a0dad;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"],
+  form textarea {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  form button[type="submit"],
+  form a {
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button[type="submit"]:hover,
+  form a:hover {
+    background-color: #501f8a;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
